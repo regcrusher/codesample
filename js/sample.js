@@ -6,6 +6,7 @@ $(function() {
 
 	setHeight();
 
+	// Call setHeight on all resize events
 	$(window).resize(function() {
 		setHeight();
 	});
@@ -19,14 +20,15 @@ $(function() {
 
 	}
 
-	// Validate required fields
+	// Validate required fields.
+	// Getcode.php validates a field from the db
 	$("#password-form").validate({
 		errorPlacement: function(error, element) {
 			$("#messageBox1").html('');
 			error.appendTo("#messageBox1");
 		},
 		onkeyup: false,
-		debug: true,
+		debug: false,
 		rules: {
 			code: {
 				required: true,
@@ -44,6 +46,7 @@ $(function() {
 				remote: "This password is invalid"
 			}
 		},
+		// On Submit, fade out before submission.
 		submitHandler: function(form) {
 			$('#password').fadeOut('slow', function() {
 				form.submit();
