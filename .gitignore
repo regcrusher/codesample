@@ -1,0 +1,6 @@
+/class/db.php
+sftp_config.json
+/.sass-cache/
+/node_modules/
+regcrusher.sublime-project
+regcrusher.sublime-workspace

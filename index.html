@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Code sample</title>
+
+
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+
+	<link rel="stylesheet" href="/css/sample.css" />
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.min.js"></script>
+	
+	<script type="text/javascript" src="/dist/js/sample.min.js"></script>
+
+</head>
+<body>
+	<div id="password_container">
+		<div class="container">
+			
+			<div id="password" >
+				<form id="password-form" class="form-inline" role="form" method="post" action="landing.php"> 
+					<h2>ENTER <span class="nowrap">VERIFICATION CODE</span></h2> 
+					<div class="form-group">
+						<label class="sr-only" for="code">Password</label>
+						<input type="password" class="form-control input-lg" id="code" name="code" placeholder="Verification Code">
+					</div>
+					<button id="code_submit" type="submit" class="btn btn-lg btn-warning btn-default">Enter</button>
+					<div class="clear"></div><!-- end div.clear -->
+				</form>
+				<div class="clear"></div><!-- end div.clear -->
+				<div id="messageBox1"></div><!-- end div.errors -->
+			</div><!-- end div#password -->
+			<div class="clearfix"></div><!-- end div.clearfix -->
+		</div><!-- end div.container -->
+		<div class="clearfix"></div><!-- end div.clearfix -->
+	</div><!-- end div#password_container -->
+
+
+
+
+</body>
+</html>
